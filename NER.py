@@ -55,10 +55,6 @@ with nlp.disable_pipes(*unaffected_pipes):
     
     print("Losses at iteration {}".format(iteration), losses)
 
-# test 
-doc = nlp("SELUBUNG yang menyelimuti kasus penembakan yang menewaskan Pendeta Yeremia Zanambani di Kabupaten Intan Jaya, Papua kian terkuak. Hasil investigasi Tim Gabungan Pencari Fakta (TGPF) kasus tersebut menyatakan bahwa penembakan di Intan Jaya diduga dilakukan oleh aparat keamanan.")
-print(doc.ents)
-print("Entities", [(ent.text, ent.label_) for ent in doc.ents])
 
 # save model 
 from pathlib import Path
